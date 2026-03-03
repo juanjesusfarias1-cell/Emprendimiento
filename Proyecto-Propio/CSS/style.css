@@ -1,3 +1,7 @@
+/* Estilos para el sitio web */
+
+/*body*/
+
 body{
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,13 +9,25 @@ body{
     background-color: #d3d1d1;
    }
 
-header {
+
+
+/*header*/
+   header {
     background-color: #333;
     color: white;
     padding: 20px;
     text-align: center;
   }
   
+
+  /*nav*/
+  nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+
   nav ul {
     list-style-type: none;
     margin: 0;
@@ -36,10 +52,14 @@ header {
     background-color: #111;
   }
   
+  /*main*/
+  
   main {
     padding: 20px;
   }
   
+  /*footer*/
+
   footer {
     background-color: #333;
     color: white;
