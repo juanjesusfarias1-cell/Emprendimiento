@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +11,17 @@
 <!-- Body-->
 
 <body>
+    
+    <div id="loader-wrapper">
+        <div class="loader-content">
+            <svg class="loader-logo" viewBox="0 0 100 100">
+                <path d="M50 5 L15 20 V50 C15 75 50 95 50 95 C50 95 85 75 85 50 V20 L50 5Z" 
+                      fill="none" stroke="#38bdf8" stroke-width="4"/>
+            </svg>
+            <div class="loader-bar"></div>
+            <p>Iniciando Jematis...</p>
+        </div>
+    </div>
     
     <!-- Header -->
 
@@ -63,13 +74,15 @@
 
         <section id="Contacto">
             <div class="container">
-                <h2>Comienza tu transformación digital</h2>
-                <p>¿Listo para llevar tu empresa al siguiente nivel? Contáctanos y descubre cómo podemos ayudarte a crecer.</p>
-                <p><strong>Correo electrónico:</strong> <a href="mailto:contacto@jematis.com">contacto@jematis.com</a></p>
-                <div class="cta-buttons">
-                    <a href="tel:+5412345678" class="btn btn-primary">Llamar ahora</a>
-                    <a href="https://wa.me/5412345678?text=Hola,%20me%20interesa%20saber%20más" target="_blank" class="btn btn-secondary">WhatsApp</a>
-                </div>
+                <h2>¿Listo para destacar en internet?</h2>
+                <p class="text-center">Cuéntanos tu idea y te ayudaremos a hacerla realidad.</p>
+                <form id="contactForm">
+                    <input type="text" id="nombre" placeholder="Nombre completo" required>
+                    <input type="email" id="email" placeholder="Correo electrónico" required>
+                    <textarea id="mensaje" rows="5" placeholder="¿Cómo te imaginas tu nueva página web?" required></textarea>
+                    <button type="submit" class="btn-submit">Enviar Solicitud</button>
+                </form>
+                <div id="formFeedback"></div>
             </div>
         </section>
     </main>
@@ -175,6 +188,8 @@
             observer.observe(section);
         });
     </script>
+
+    <script src="script.js"></script>
 
 </body> 
 </html>
